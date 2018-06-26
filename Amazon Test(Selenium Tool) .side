@@ -1,0 +1,62 @@
+{
+  "id": "788657c0-735a-4b2f-b199-b0d2d9d9e5d0",
+  "name": "Amazon Test ",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "aa30f1d1-9ee2-40fd-8713-f598c4e68a74",
+    "name": "AmazonAutomation",
+    "commands": [{
+      "id": "881b30b0-6b07-4818-868f-d3cf9a21408d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/. ",
+      "value": ""
+    }, {
+      "id": "b2b4cb8a-086b-4ae9-ba4b-5813ba9b0f8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "value": "Ender's Game by Orson Scott Card."
+    }, {
+      "id": "77bd6dd5-fd40-4810-8f22-d72df6b954a3",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=input.nav-input",
+      "value": "19,12"
+    }, {
+      "id": "d6e64071-c952-4c23-b0c4-36e71bb52187",
+      "comment": "",
+      "command": "click",
+      "target": "//li[@id='result_0']/div/div/div/div[2]/div/div/a/h2",
+      "value": "192,8"
+    }, {
+      "id": "959bbf3f-81a1-4fe2-bd68-fe0fe42ebad6",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=add-to-cart-button",
+      "value": ""
+    }, {
+      "id": "a15d3ae8-d675-4dcc-a479-4a6b3a3a269d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=hlb-view-cart-announce",
+      "value": ""
+    }, {
+      "id": "bae15ebd-2b4e-453a-8ff4-dd6eda9efef8",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=/html/body/div[1]/div[4]/div[1]/div[4]/div/div[2]/div[4]/form/div[2]/div/div[4]/div/div[1]/div/div/div[2]/div/span[1]/span/input",
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "600f9d60-db77-4ab2-a778-04b2f21d833f",
+    "name": "Default Suite",
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aa30f1d1-9ee2-40fd-8713-f598c4e68a74"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": [],
+  "version": "1.0"
+}
